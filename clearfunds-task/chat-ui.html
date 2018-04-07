@@ -1,0 +1,130 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>ClearFunds</title>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link href="chat-ui.css" rel="stylesheet" />
+    
+
+    </head>
+    <body>
+        <div class="chatbox-container clearfix">
+            <div class="chatbox-left-section" id="people-list">
+            <div class="input-holder">
+                <input type="text" placeholder="type something....." id="input" />
+                <i class="fa fa-search"></i>
+            </div>
+            <div class="chat-profiles">
+                <!--- all output will print here in this div wrapper -->
+                <div id="content-placeholder"></div>
+
+                <script id="some-template" type="text/x-handlebars-template">
+                    {{#each tasks}}
+                    <div class="chat-profiles-item clearfix">
+                        <img src="{{avatar}}" alt="avatar" />
+                        <div class="about">
+                            <div class="name">{{name}}</div>
+                            <div class="status">
+                                <i class="fa fa-circle online"></i> online
+                            </div>
+                        </div>
+                    </div>
+                    {{/each}}
+                </script>
+            </div>
+            </div>
+            
+            <div class="chatbox-right-section">
+            <div class="chatbox-header clearfix">
+                <img src="https://media.licdn.com/dms/image/C5603AQEWOyrvYu82YQ/profile-displayphoto-shrink_200_200/0?e=1528142400&v=alpha&t=nLNAYfU6bJYAFZccr2d45hdURgsOwyT9g-yx6zwHYys" alt="avatar" />
+                <div class="chatbox-content">
+                <div class="chatbox-person">pratiksha Parsewar</div>
+                <div class="chatbox-text">Lorem Ipsum is simply dummy text of the printing</div>
+                </div>
+                <i class="fa fa-star"></i>
+            </div> 
+            
+            <div class="chatbox-conversation">
+                <div class="clearfix">
+                        <div class="chat-time-name align-right ">
+                        <span class="time" >10:10 AM, Today</span> 
+                        <span class="name" >pratiksha</span> <i class="fa fa-circle me"></i>
+                        
+                        </div>
+                        <div class="message green">
+                                Lorem Ipsum is simply dummy text of the printing
+                        </div>
+                    </div>
+                
+                    <div class="clearfix">
+                            <div class="chat-time-name align-right ">
+                            <span class="time" >10:10 AM, Today</span> 
+                            <span class="name" >pratiksha</span> <i class="fa fa-circle me"></i>
+                            
+                            </div>
+                            <div class="message blue">
+                                    Lorem Ipsum is simply dummy text of the printing
+                            </div>
+                    </div>
+                
+                    <div class="clearfix">
+                            <div class="chat-time-name align-right ">
+                            <span class="time" >10:10 AM, Today</span> 
+                            <span class="name" >pratiksha</span> <i class="fa fa-circle me"></i>
+                            
+                            </div>
+                            <div class="message green">
+                                    Lorem Ipsum is simply dummy text of the printing
+                            </div>
+                    </div>
+                
+                    <div class="clearfix">
+                            <div class="chat-time-name align-right ">
+                            <span class="time" >10:10 AM, Today</span> 
+                            <span class="name" >pratiksha</span> <i class="fa fa-circle me"></i>
+                            
+                            </div>
+                            <div class="message blue">
+                                    Lorem Ipsum is simply dummy text of the printing
+                            </div>
+                    </div>
+                
+                    <div class="clearfix">
+                            <div class="chat-time-name align-right ">
+                            <span class="time" >10:10 AM, Today</span> 
+                            <span class="name" >pratiksha</span> <i class="fa fa-circle me"></i>
+                            
+                            </div>
+                            <div class="message green">
+                                    Lorem Ipsum is simply dummy text of the printing
+                            </div>
+                    </div>
+                
+            
+            
+            <div class="chat-message clearfix">
+                <textarea name="message-to-send" id="message-to-send" placeholder ="Type your message" rows="3"></textarea>
+                        
+                <i class="fa fa-file-o"></i> &nbsp;&nbsp;&nbsp;
+                <i class="fa fa-file-image-o"></i>
+                
+                <button>Send</button>
+        
+            </div> 
+            
+            </div>
+            
+        </div> 
+    
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+        <script src="handlebar.js"></script>
+        <script src="script.js"></script>
+    </body>
+    </html>

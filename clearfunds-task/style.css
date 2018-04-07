@@ -1,0 +1,51 @@
+body {
+    font-size: 16px;
+    line-height: 1.5em;
+    font-family: Helvetica Neue;
+}
+
+.card-holder {
+    width: 400px;
+    margin: 0 auto;
+   
+}
+.listview-holder {
+    margin: .5rem 0 1rem 0;
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+    overflow: hidden;
+    position: relative;
+} 
+.listview-holder  li {
+    cursor: pointer;
+    list-style-type: none;
+    background-color: #fff;
+    line-height: 1.5rem;
+    padding: 10px 20px;
+    margin: 0;
+    border-bottom: 1px solid #e0e0e0;       
+    padding-left: 30px;
+}
+.listview-holder  li:hover {
+    background-color:  #eee;
+   
+}
+
+.listview-holder  li:first-child {
+    background-color:  #26a69a;
+    color: #fff;
+}
+.secondary-content {
+    float: right;
+    color: #26a69a;
+    text-decoration: none;
+    width: 25px;
+    height: 25px;
+    background: #eee;
+    border-radius: 50%;
+    text-align: center;
+}
+.listview-holder  li:hover .secondary-content{
+    background: #fff;
+    color: #26a69a;
+}
